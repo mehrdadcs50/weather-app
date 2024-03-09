@@ -131,7 +131,6 @@ pressure_label = tk.Label(root, text="....", font=("arial", 20, "bold"),bg="#1ab
 pressure_label.place(x=670, y=430)
 
 
-
 root.mainloop()
 
 
