@@ -3,7 +3,7 @@ from tkinter import messagebox
 from geopy.geocoders import Nominatim
 # from timezonefinder import TimezoneFinder
 from datetime import datetime
-import pytz
+# import pytz
 import requests
 
 
@@ -64,7 +64,13 @@ search_icon = tk.PhotoImage(file="search_icon.png")
 search_icon_buttom = tk.Button(root, image=search_icon, border=0, 
                                cursor="hand2", bg="#404040", command=get_weather)
 
+def func(event):
+    get_weather()                               
+root.bind('<Return>', func)
+
 search_icon_buttom.place(x=590, y=34)
+
+
 
 #logo
 
